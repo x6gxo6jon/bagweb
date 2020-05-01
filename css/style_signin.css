@@ -1,0 +1,255 @@
+.sinin_bg_inner{
+	width: 100%;
+	padding-top: calc(100% * 9 / 16);
+}
+.sinin_bg{
+	background-image: url("../img/signin_page/whereslugo-3v3EMQI3pYQ-unsplash.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+.sinin_bg:before{
+	content: "";
+	background-color: #fff;
+	opacity: 0.6;
+	width: 100%;
+	height: 100%;
+}
+.card{
+	padding: 56px;
+	background-color: #fff;
+	border-radius: 2px;
+	box-shadow: 0 3px 20px rgba(0,0,0,0.2);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	min-width: 80%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.card_title{
+	font-size: 24px;
+	font-weight: 400;
+	margin-top: 16px;
+	margin-bottom: 48px;
+	color: #525252;
+	text-align: center;
+	margin-top: 0;
+}
+.form{
+	width: 100%;
+}
+.form_input{
+	margin-bottom: 16px;
+}
+.form_p{
+	color: #828282;
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	display: block;
+	text-align: right;
+}
+.sign_form{
+	width: 45%;
+	margin: 0 auto;
+}
+.btn.btn_signin{
+	background-color: #D01A32;
+	border: 0px;
+	color: #fff;
+	margin-top: 16px;
+	margin-bottom: 8px;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 24px;
+	padding: 8px 40px;
+}
+.signin{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 32px;
+}
+.login{
+	text-align: center;
+	width: 100%;
+	margin-bottom: 8px;
+	display: flex;
+	justify-content: center;
+}
+.login_btn{
+	width: 45%;
+}
+.btn.btn_fb{
+	background-color: #828282;
+	display: inline-block;
+	border: 0;
+	width: 50%;
+	height: 40px;
+}
+.btn.btn_fb img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 70%;
+}
+.btn.btn_line{
+	background-color: #828282;
+	display: inline-block;
+	border: 0;
+	width: 50%;
+	height: 40px;
+}
+.btn.btn_line img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	max-width: 50%;
+}
+.line{
+	background-color: #d4d4d4;
+	width: 1px;
+	height: 300px;
+	margin: 0 auto;
+}
+.create_area{
+	width: 45%;
+	text-align: center;
+	margin-top: 10%;
+	margin: 0 auto;
+}
+.create_area p{
+	color: #828282;
+}
+@media (max-width: 1000px) {
+	.card{
+		padding: 40px;
+		box-shadow: 0 2px 18px rgba(0,0,0,0.2);
+		height: 80%;
+	}
+	.card_title {
+	    font-size: 20px;
+	    margin-bottom: 40px;
+	}
+	.signin {
+	    margin-bottom: 28px;
+	}
+}
+@media(max-width: 900px){
+	.card_title {
+	    font-size: 20px;
+	    margin-bottom: 20px;
+	}
+	.signin {
+	    margin-bottom: 16px;
+	}
+	.btn.btn_signin {
+	    margin-bottom: 8px;
+	    font-size: 14px;
+	    line-height: 20px;
+	    padding: 6px 36px;
+	}
+	.btn.btn_fb {
+	    height: 30px;
+	}
+	.btn.btn_line{
+		height: 30px;
+	}
+	.btn.btn_line img{
+		max-width: 50%;
+	}
+}
+@media(max-width: 860px){
+	.sinin_bg_inner{
+		width: 100%;
+		padding-top: 100%;
+	}
+	.card{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		padding: 32px;
+	}
+	.sign_form {
+	    width: 80%;
+	    margin: 0 auto;
+	}
+	.line{
+		transform: rotate(90deg);
+		height: 300px;
+		margin: -100px auto -100px auto;
+	}
+	.login{
+		justify-content: center;
+	}
+	.login_btn{
+		width: auto;
+	}
+	.btn.btn_fb{
+		margin-right: 16px;
+	}
+	.create_area{
+		width: 80%;
+	}
+	.create_area p{
+		display: none;
+	}
+}
+@media(max-width: 630px){
+	.sinin_bg_inner{
+		width: 100%;
+		padding-top: 120%;
+	}
+}
+@media(max-width: 515px){
+	.sinin_bg_inner{
+		width: 100%;
+		padding-top: 140%;
+	}
+	.login{
+		flex-wrap: wrap;
+	}
+	.login_btn{
+		width: 100%;
+	}
+	.btn.btn_fb{
+		margin-right: 0;
+		margin-bottom: 16px;
+	}
+	.btn.btn_fb {
+	    height: 30px;
+	}
+	.btn.btn_line{
+		height: 30px;
+	}
+}
+@media(max-width: 430px){
+	.sinin_bg_inner{
+		width: 100%;
+		padding-top: 180%;
+	}
+}
+@media(max-width: 375px){
+	.sinin_bg_inner{
+		width: 100%;
+		padding-top: 220%;
+	}
+	.card{
+		width: 90%;
+	}
+}

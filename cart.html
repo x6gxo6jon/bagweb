@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ShoppingCart</title>
+	<meta name="viewport" content="width=divice-width, initial-scale=1.0  user-scalable=0">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<script src="js/v-minusplusfield.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/v-minusplusfield.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style_cart.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="header">
+			<div class="container">
+				<div class="navbar u-clearfix navbar--collapse">
+					<a href="index.html" class="nav_logo"></a>
+					<a href="#overlay" class="menu_tuggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</a>					
+					<div id="overlay" class="nav_menu u-clearfix popupnav">
+						<ul class="nav__menu">
+							<li><a href="#" class="nav_menu_text">About us</a><span></span></li>
+							<li><a href="product_all.html" class="nav_menu_text">Product</a><span></span></li>
+							<li><a href="#" class="nav_menu_text">Contact</a><span></span></li>
+							<li><a href="#" class="nav_menu_text">Shop</a></li>
+						</ul>
+						<a href="#!" class="popup_close">
+							<span></span>
+							<span></span>
+						</a>
+					</div>
+					<div class="nav_right">
+						<div class="search_input">
+							<input class="js-input" type="search">
+							<i class="icon-search"></i>
+						</div>
+						<div class="icon-group">
+							<a href="signin_page.html" class="icon-btn">
+								<i class="icon icon-member"></i>
+							</a>
+							<a href="#" class="icon-btn hearticon">
+								<i class="icon icon-favrite"></i>
+							</a>
+							<a href="cart.html" class="icon-btn">
+								<i class="icon icon-cart"></i>
+							</a>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="process">
+				<div class="container">
+					<div class="progress_groups">
+						<div class="process_detail">
+							<div class="process_icon">
+								<img src="img/cart/shopping-cart.png" class="process_icon_img">
+							</div>
+							<p class="process_text">Shopping cart</p>
+						</div>
+						<span class="process_line"></span>
+						<div class="process_detail">
+							<div class="process_icon">
+								<img src="img/cart/contract.png" class="process_icon_img">
+							</div>
+							<p class="process_text">Delivery information</p>
+						</div>
+						<span class="process_line"></span>
+						<div class="process_detail">
+							<div class="process_icon">
+								<img src="img/cart/coin.png" class="process_icon_img">
+							</div>
+							<p class="process_text">Payment</p>
+						</div>
+						<span class="process_line"></span>
+						<div class="process_detail">
+							<div class="process_icon">
+								<img src="img/cart/like_line.png" class="process_icon_img">
+							</div>
+							<p class="process_text">Done!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shoppingcart_text">
+				<div class="container">
+					<h3 class="shoppingcart_tite">Shopping cart</h3>
+					<ul class="shoppingcart_subtite">
+						<li>Unit-price</li>
+						<li>Amount</li>
+						<li>Total</li>
+						<li>Del</li>
+					</ul>
+				</div>
+			</div>
+			<div class="shoppingcart_detail">
+				<div class="container">
+					<div class="shoppingcart_detail_row">
+						<div class="shoppingcart_product">
+							<div class="shoppingcart_product_inner">
+								<img src="img/cart/1.png" alt="">
+							</div>
+						</div>
+						<div class="product_cart">
+							<div class="product_detail">
+								<h5 class="product_title">Travel Backpack</h5>
+								<div class="color_choose u-clearfix">
+									<ul>
+										<li><a href="#target" class="color color_black"></a></li>
+										<li><a href="#target" class="color color_grey"></a></li>
+									</ul>
+								</div>
+								<div class="btn likebtn">+ Move to wish list</div>
+							</div>
+							<div class="box">
+								<h5 class="unit_price_text">$2,599</h5>
+							</div>
+							<div class="box">
+								<div id="app" class="number_box">
+	                				<v-minusplusfield :value="1" :min="1" :max="10"></v-minusplusfield>
+	            				</div>
+							</div>	
+							<div class="box">
+								<h5 class="total">$2,599</h5>
+							</div>
+							<div class="box_sm">
+								<i class="fa fa-trash-o" aria-hidden="true"></i>
+								<i class="fa fa-heart-o"></i>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="totalarea">
+				<div class="container">
+					<div class="back">
+						<i class="fa fa-angle-double-left"></i>
+						<h5 class="back_text">Continue shopping</h5>
+					</div>
+					<div class="order_total">
+						<div class="subtotal">
+							<h4>Subtotal</h4>
+							<h4>$2,599</h4>
+						</div>
+						<div class="ship">
+							<h4>Shipping fee</h4>
+							<h4>$60</h4>
+						</div>
+						<div class="code">
+							<form action="" class="form">
+								<input type="text" placeholder="Add promo code" >
+								<i class="fa fa-plus"></i>
+							</form>
+						</div>	
+						<div class="order">
+							<h3>Order total</h3>
+							<h3 class="total_money">$2,659</h3>
+						</div>
+						<div class="checkout">
+							<div class="btn  btn--checkout">
+								<a href="" class="checkout_btn_text">Checkout now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="row  footer_row">
+					<div class="col-sm-3 col-xs-6">
+						<ul class="list">
+							<li><a href="#" class="list_title">Product</a></li>
+							<li><a href="#" class="list_subtitle">Blog</a></li>
+							<li><a href="#" class="list_subtitle">Our future</a></li>
+							<li><a href="#" class="list_subtitle">Support</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<ul class="list">
+							<li><a href="#" class="list_title">About us</a></li>
+							<li><a href="#" class="list_subtitle">Camera bag</a></li>
+							<li><a href="#" class="list_subtitle">Hand bag</a></li>
+							<li><a href="#" class="list_subtitle">Wallet</a></li>
+							<li><a href="#" class="list_subtitle">Purse</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<ul class="list">
+							<li><a href="#" class="list_title">Shop</a></li>
+							<li><a href="#" class="list_subtitle">America</a></li>
+							<li><a href="#" class="list_subtitle">Europe</a></li>
+							<li><a href="#" class="list_subtitle">Japan</a></li>
+							<li><a href="#" class="list_subtitle">Taiwan</a></li>
+						</ul>
+					</div>
+					<div class="col-sm-3 col-xs-6">
+						<ul class="list">
+							<li><a href="#" class="list_title">Contact</a></li>
+							<li><a href="#" class="list_subtitle">Customer Service</a></li>
+							<li><a href="#" class="list_subtitle">Help online</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer_icon_group">
+					<a href="#" class="icon-btn"><img src="img/icon/facebook_grey_828282-01.svg" alt="" class="icon"></a>
+					<a href="#" class="icon-btn"><img src="img/icon/line_grey_828282-01-01.svg" alt="" class="icon"></a>
+				</div>
+							
+				<div class="copyright">
+					<p>©2019, Douchebags. All rights reserved.</p>
+				</div>
+			</div>
+		</div>
+		<!-- end footer -->
+
+	</div>
+	
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script>
+        var app = new Vue({
+        el: '#app',
+            data: {
+                message: 'Hello Vue!'
+            }
+        })
+    </script>
+	<script>
+    $(document).ready(function(){ 
+    	//加的效果 
+    	$(".add").click(function(){ var n=$(this).prev().val(); var num=parseInt(n)+1; if(num==0){ return;} $(this).prev().val(num); }); 
+    	//減的效果 
+    	$(".jian").click(function(){ var n=$(this).next().val(); var num=parseInt(n)-1; if(num==0){ return} $(this).next().val(num); });})
+    </script>
+</body>
+</html>
