@@ -431,7 +431,8 @@
 	}
 	.box_sm{
 		width: 100%;
-		position: static;
+		top: 120px;
+		position: absolute;
 		text-align: right;
 		transform: translateY(0);
 	}
@@ -440,10 +441,10 @@
     	margin-bottom: 0;
 	}
 	.fa-trash-o {
-    	margin-right:.8em;
+    	margin-right:.6em;
 	}
 	.fa-heart-o{
-		margin-right: .4em;
+		margin-right:0;
 	}
 }
 @media(max-width: 340px){
@@ -452,5 +453,8 @@
 	}
 	.total {
 	margin-left: 6px;
+	}
+	.box_sm{
+		top: 115px;
 	}
 }

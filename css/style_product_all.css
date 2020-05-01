@@ -1,27 +1,13 @@
-.grey{
+.banner .container{
 	width: 100%;
 	background-color: #F5F5F5;
 	height: auto;
 	margin-top: 16px;
 	margin-bottom: 32px;
-	padding: 40px 0;
-}
-.box{
-	width: auto;
-	height: 360px;
-	line-height: 180px;
-	margin: auto;
-}
-.box:before{
-	content: "";
-	display: inline-block;
-	height: 100%;
-	width: 0;
-	vertical-align: middle;
-}
-.content{
-	display: inline-block;
-	vertical-align: middle;
+	padding: 10px 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center; 
 }
 .banner_title{
 	margin-top: 0;
@@ -46,15 +32,13 @@
 	line-height: 24px;
 	padding: 8px 40px;
 }
-.banner_inner{
-	width: 100%;
-	padding-top: 100%;
-}
-.banner_inner img{
-	width: 100%;
-	position: absolute;
-	top: 0;
-	max-width: 100%;
+.banner_pic{
+	width: 33%;
+	height: 76vh;
+	background-image: url(../img/product_page/practice_07.png);
+	background-size: 90%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 select{
 	border:0;
@@ -203,6 +187,15 @@ option{
 .color.color_brown{
 	background-color: #60463C;
 }
+.mb-64{
+	margin-bottom: 64px;
+}
+@media(max-width: 1024px){
+	.banner_pic{
+		width: 38%;
+		height: 76vh;
+	}
+}
 @media(max-width: 960px){
 	.grey{
 		padding: 20px 0;
@@ -223,17 +216,6 @@ option{
 		font-size: 16px;
 		line-height: 24px;
 		margin-bottom: 16px;
-	}
-	.banner_inner{
-		margin-left: -60px;
-		width: 100%;
-		padding-top: 100%;
-	}
-	.banner_inner img{
-		width: 100%;
-		position: absolute;
-		top: 0;
-		max-width: 100%;
 	}
 	.product_nav_text{
 		font-size: 16px;
@@ -262,27 +244,20 @@ option{
 }
 @media (max-width: 768px) {
 	.banner_title{
-		font-size: 32px;
+		font-size: 40px;
 		line-height: 48px;
 	}
 	.banner_p{
 		font-size: 14px;
-		line-height: 20px;
+		line-height: 26px;
 	}
 	.btn.btn_banner{
 		width: 160px;
 		font-size: 14px;
 	}
-	.banner_inner{
-		margin-left: 0;
-		margin-top: 8px;
-		position:absolute;
-		top: 50%;
-		left: 0;
-	}
-	.box {
-	    width: auto;
-	    height: 360px;
+	.banner_pic{
+		width: 40%;
+		height: 60vh;
 	}
 	.product_list{
 		margin-top: 24px;
@@ -292,40 +267,57 @@ option{
 	}
 }
 @media (max-width: 580px) {
-	.banner_inner{
-		margin-top: -8px;
+	.banner .container{
+		padding-left: 30px;
+		margin: 0 auto;
 	}
-	.col-exs-6{
-		width: 50%;
+	.banner_pic{
+		width: 48%;
+		height: 50vh;
 	}
 	.product_list_thumbnail{
 		margin-top: 24px;
 	}
 	.banner_title {
-	    font-size: 24px;
-	    line-height: 32px;
-	}
-	.content{
-		margin: 0;
+	    font-size: 32px;
+	    line-height: 1.2em;
 	}
 	.banner_p {
-	    font-size: 12px;
-	    line-height: 20px;
+	    font-size: 16px;
+	    line-height: 1.3em;
 	}
 	.btn.btn_banner {
 	    width: 120px;
 	    font-size: 12px;
 	    padding: 6px 18px;
 	}
+	.col-exs-6{
+		width: 50%;
+	}
+	.mb-64{
+		margin-bottom: 0;
+	}
 }
 @media(max-width: 470px){
+	.banner .container{
+		padding: 10px 35px;
+	}
+	.banner_pic{
+		width: 70%;
+		height: 43vh;
+	}
 	.banner_title {
-	    font-size: 18px;
-	    line-height: 24px;
+	    font-size: 28px;
+	    line-height: 1.3em;
 	}
 	.banner_p {
+	    font-size: 14px;
+	    line-height:1.5em;
+	}
+	.btn.btn_banner {
+	    width: 120px;
 	    font-size: 12px;
-	    line-height: 16px;
+	    padding: 3px 18px;
 	}
 	.product_thumbnail__title {
 		padding-left: 16px;
@@ -339,18 +331,43 @@ option{
 	}
 }
 @media(max-width: 420px){
-	.grey {
-	   margin-top: 0;
+	.banner .container{
+		padding: 10px 20px;
 	}
 	.banner_title {
-	    font-size: 18px;
-	    line-height: 24px;
+	    font-size: 24px;
+	    line-height: 1.3em;
 	}
 	.banner_p {
-	    font-size: 12px;
+	    font-size: 13px;
 	    line-height: 16px;
 	}
-	.banner_inner{
-		margin-top: 10px;
+	.btn.btn_banner {
+	    padding: 2px 18px;
+	}
+	.banner_pic{
+		width: 70%;
+		height: 40vh;
+	}
+}
+@media(max-width: 380px){
+	.banner_pic{
+		width: 40%;
+		height: 28vh;
+	}
+	.banner_title {
+	    font-size: 24px;
+	    line-height: 1.4em;
+	}
+	.banner_p {
+		display: none;
+	}
+}
+@media (max-width: 340px) {
+	.banner_pic{
+		height: 25vh;
+	}
+	.banner_title {
+	    font-size: 22px;
 	}
 }
